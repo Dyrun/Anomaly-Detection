@@ -56,9 +56,9 @@ void Aircraft::updateEngineStatus() {
 
 void Aircraft::updateVibration() {
     if (engineFailure) {
-        vibration = 5.0 + static_cast<double>(rand() % 6); // 5.0-10.0
+        vibration = 5.0 + static_cast<double>(rand()) / RAND_MAX * 5.0; // 5.0-10.0
     } else {
-        vibration = 2.5 + static_cast<double>(rand() % 2); // 2.5-3.5
+        vibration = 2.5 + static_cast<double>(rand()) / RAND_MAX; // 2.5-3.5
     }
 }
 
