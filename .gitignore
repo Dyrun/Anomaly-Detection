@@ -3,7 +3,8 @@
 anomalies.json
 
 # C++ build files
-cpp/simulator
+cpp/json.hpp
+cpp/simulator.exe
 
 # Python
 __pycache__/
